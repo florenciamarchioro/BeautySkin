@@ -1,13 +1,15 @@
 * {
     padding: 0;
     margin: 0;
+   
 }
 
 /*****************************************************************/
 /*********************     CUERPO DE PAGINA     *******************/
 /*****************************************************************/
 body{
-    background-image: url(./Imagenes/foto-fondo-2.jpg);
+    min-height: 100vh;
+    background: url(./Imagenes/foto-fondo-2.jpg);
     background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
@@ -22,68 +24,35 @@ body{
     justify-content: center;
 }
 
-.carrousel {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2%;
+.box:hover, .botonDos, .botonTres:hover, .botonTresA:hover {
+    transform:scale(2);
+    transition: all 1s;
 }
-
 
 /*****************************************************************/
 /*********************         NAVEGACION     ********************/
 /*****************************************************************/
 
-.menu div {
+nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Segoe UI', Tahoma, 
-    Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color: pink;
-    margin-top: 4%;
-  
-}
-.barraizq {
-   list-style: none;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    flex-direction:row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.barraizq  li a {
+.navegacion li, .navegacion li a {
+    list-style: none;
     text-decoration: none;
-    color: pink;  
-}
-
-.barraizq  li  {
-    padding-left: 15px;
-    padding-right: 15px;
-   
-}
-
-.barrader {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
- 
-}
-.barrader  li a {
-    text-decoration: none;
-    color: pink
-}
-
-.barrader  li  {
-    padding-left: 15px;
-    padding-right: 15px;
-
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin: 10px;   
 }
 
 .link {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 4%;
 }
 
 .fotosinicio{
@@ -127,7 +96,10 @@ body{
     text-align: center;
     color: rgb(87, 94, 79);
     border-style:unset solid;
-    margin: 3%;
+    margin: 10px;
+    margin-left: 40px;
+    width: 400px;
+    height: 45px;
 }
 
 .enlaces div a{
@@ -140,8 +112,8 @@ body{
 
 .comentario {
     background-color: pink;
-    margin-top: 90px;
     text-align: center;
+    margin-top: 50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
 }
@@ -150,8 +122,9 @@ body{
    text-align: center;
    font-size: 30px;
    color: rgb(95, 111, 99);
-   margin-left: 25%;
-   margin-right: 25%;
+   margin-left: 300px;
+   margin-right: 300px;
+   
 }
 
 .dos {
@@ -166,6 +139,40 @@ body{
     font-size: 20px;
     text-decoration: none; 
 }
+
+.botonDos, .botonTres button{
+    background-color: #ffb6ee;
+    width: 150px;
+    margin: 20px 0px 60px 60px;
+    margin-left: 35px;
+    height: 20px;
+    color: rgb(100, 109, 99) ;
+    border-radius: 7px;
+    border: 1px solid rgb(100, 109, 99);
+    margin-top: 60px;
+    
+} 
+.botonTres button{
+    margin-left: 700px;
+    height: 30px;
+}
+
+.botonDos a {
+    text-decoration: none;
+    color: rgb(100, 109, 99);
+}
+
+.botonTresA {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.botonTresA a, .botonTres a {
+    text-decoration: none;
+    color: rgb(100, 109, 99);
+    
+}
+
 
 /*****************************************************************/
 /*********************          SOBRE MI      ********************/
@@ -216,6 +223,8 @@ body{
 }
 
 .brochas {
+    border: 1px solid rgb(255, 76, 207);
+    box-shadow: inset 0 0 1000px #ff76df;
     background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
     font-size: 20px;
     color: rgb(97, 114, 97);
@@ -232,9 +241,6 @@ body{
     justify-content: space-around;
 }
 
-.foto {
-   display: flex; 
-}
 
 .limpieza ul {
     display: flex;
@@ -248,18 +254,19 @@ body{
     margin-top: 3%;
 }
 
+
 /*****************************************************************/
 /*********************         FOOTER         ********************/
 /*****************************************************************/
 
-.redes li a {
+.redes li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    list-style: none;
+    
 }
 
-.redes li a{
+.redes li a {
     font-family: 'Segoe UI', Tahoma, 
     Geneva, Verdana, sans-serif;
     font-size: 20px;
@@ -268,33 +275,95 @@ body{
     list-style: none;
 }
 
-.tituloContacto, .tituloEscribir, h1 {
+footer h3, h1, form h3 {
     font-size: 50px;
     font-family: Impact, 
     Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(82, 89, 81);
+    color:  rgb(100, 109, 99);
     text-align: center;
     margin-top: 30px;
 }
 
-.completarFormulario li, .formulario {
-    color: rgb(82, 89, 81);
-    list-style: none;
-    text-align: left;
-    font-size: 20px;
-    font-family:sans-serif;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 4px;
-
+.formularioUno {
+    background-color:white;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    margin-left: 300px;
+    
 }
+
+.formularioUno input {
+   width: 900px;
+}
+
+.formularioUno h3 {
+  margin-left: 450px;
+  margin-top: 50px;
+}
+
+.formularioUno button{
+    background-color: #fdcbf1;
+    margin-left: 460px;
+}
+
+
+/*****************************************************************/
+/*********************         CONTACTO       ********************/
+/*****************************************************************/
 
 .fotoContacto {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
+
+.form {
+    background-color: #ffc1f0;
+    background-position: center;
+    border: 1px solid rgb(255, 76, 207);
+    width: 605px;
+    height: 499px;
+    box-shadow: inset 0 0 40px #ff76df;
+}
+
+.formDos {
+    margin: 20px;
+    font-size: 50px;
+    font-family: Impact, 
+    Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:  rgb(100, 109, 99);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form input, .escribaSuMensaje {
+   width: 400px;
+   height: 30px;
+   margin: 5px 20px;
+   margin-left: 90px;
+}
+
+
+.form button {
+    background-color: #ff76df;
+    width: 135px;
+    margin: 20px 0px 60px 60px;
+    margin-left: 200px;
+    height: 30px;
+    color: rgb(100, 109, 99) ;
+    border-radius: 7px;
+    border: 1px solid rgb(100, 109, 99);
+}
+
+
+.foto {
+    display: flex; 
+ }
+/*****************************************************************/
+/*********************         MEDIA          ********************/
+/*****************************************************************/
+
 
 @media  screen and ( max-width: 480px )
  
@@ -317,17 +386,16 @@ body{
     .menu section {
        font-size: 15px;
     }
-    .barrader{
-        display: none;
-    }
+   
     .enlaces, .brochas section, .cuatroPartes section{
         display: flex;
         flex-direction: column;
     }
-    .imagenResponsive {
+    .imagenResponsive, .foto {
         max-width: 300px;
         max-height: 300px;
-        justify-content: center; 
+        margin-left: 35px;
+        justify-content: center !important; 
     }
     .imagenesNav {
         max-width: 300px;
@@ -374,12 +442,30 @@ body{
         display: contents !important ;
     }
 
-    .foto, .imagen, .fotosinicio {
+    .imagen, .fotosinicio {
         justify-content: center !important;
     }
     
-    .fotoContacto {
+    .fotoContacto, form {
         display: flex;
         flex-direction: column;
     }
-}
+    
+    form {
+      width: 400px;
+      height: 350px;
+      margin-left: 30px;
+    }
+    form input {
+        width: 250px;
+        height: 30px;
+        margin: 5px 30px;
+        margin-left: 90px;
+    }
+    
+    form button {
+        width: 135px;
+        margin: 20px 0px 60px 60px;
+        height: 30px;
+        margin-left: 150px;
+    }
