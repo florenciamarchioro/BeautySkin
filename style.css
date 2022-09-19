@@ -352,10 +352,4 @@ footer h3, h1, .formDos {
         height: 30px;
         margin-left: 150px;
     }
-    
-    .formularioUno {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 10px;
-    }
+}    
