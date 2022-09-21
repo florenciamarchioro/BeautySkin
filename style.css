@@ -67,9 +67,11 @@ body {
 }
 
 .comentario {
-    background-color: pink;
     text-align: center;
     font-family: 'Sacramento', cursive;
+    margin: 2%;
+    font-size: 50px;
+   color: rgb(95, 111, 99);
 }
 
 .comentarioParte {
@@ -77,26 +79,17 @@ body {
     font-family: 'Sacramento', cursive;
 }
 
-.uno {
-   font-size: 50px;
-   color: rgb(95, 111, 99);
-   margin-left: 300px;
-   margin-right: 300px;
-   margin-top: 50px;  
-}
-
 .dos {
     background-color: #000;
-    margin: 2%;
     text-align: center;
 }
 
 .dos a {
     color:#e6dee9;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
     margin-left: 60px;
     margin-right: 60px;
 
@@ -107,17 +100,12 @@ body {
 /*****************************************************************/
 
 .cuatroPartes {
+    display: flex;
+    flex-direction: row;
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-    display: flex;
-    flex-direction: column;
     color: rgb(97, 114, 97);
-    margin-top: 7%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.cuatroPartes section {
-    display: flex;
+    margin: 5%;   
+    
 }
 
 .imagen {
@@ -180,42 +168,8 @@ body {
 /*****************************************************************/
 /*********************   CONTACTO  *******************************/
 /*****************************************************************/
-.form {
-    background-color: #ffc1f0;
-    background-position: center;
-    border: 1px solid rgb(255, 76, 207);
-    width: 605px;
-    height: 499px;
-    box-shadow: inset 0 0 40px #ff76df;
-}
 
-.form input {
-   width: 400px;
-   height: 30px;
-   margin: 5px 20px;
-   margin-left: 90px;
-}
 
-.tres {
-    background-color: #000;
-    margin: 2%;
-}
-
-.tres a {
-    color:#ffffff;
-    font-size: 30px;
-    text-decoration: none;
-    margin-left: 60px;
-    margin-right: 60px;
-    font-family: 'Sacramento', cursive;
-}
-
-.enviarMensaje {
-    display: flex;
-    flex-direction: row ;  
-    justify-content: center;
-    margin-top: 50px;
-}
 
 /*****************************************************************/
 /*********************      FOOTER    ****************************/
@@ -298,8 +252,16 @@ footer h3, h1, .formDos {
         margin-right: 10%;
         text-align: justify;
     }
+  .dos a {
+    margin:10px;
+  }
+  .formularioUno input {
+    max-width: 450px;
+  }
 
-    .cuatroPartes {
+ /************** SOBRE MI **********/
+
+  .cuatroPartes {
         font-size: 15px;
         display: flex;
         flex-direction: column;
